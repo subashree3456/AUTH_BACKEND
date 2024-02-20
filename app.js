@@ -5,7 +5,7 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
-app.use(cors({ credentials: true, origin: "https://starlit-selkie-b7b4f2.netlify.app/" }));
+app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 app.use("/api", router);
